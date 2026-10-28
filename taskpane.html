@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <title>m365x live merge check</title>
+  <!-- Office.js from the Microsoft CDN used by OfficeDev hello-world (taskpane.html line 7). -->
+  <script type="text/javascript" src="https://officeapis.public.onecdn.static.microsoft/1/office.js"></script>
+</head>
+<body>
+  <p id="s">m365x check taskpane: loading</p>
+  <script>
+    Office.onReady(function (info) {
+      window.__m365xLive = { ready: true, v: "check-1", host: String(info && info.host), platform: String(info && info.platform) };
+      document.getElementById("s").textContent = "m365x check taskpane: ready (" + window.__m365xLive.host + ")";
+    });
+  </script>
+</body>
+</html>

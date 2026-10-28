@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xsi:type="TaskPaneApp">
+  <Id>bb125a6d-d56a-4f87-8693-a8edb3549e19</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>m365x</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="m365x live merge"/>
+  <Description DefaultValue="Task pane for a local tool that applies approved edits. No network calls of its own, no data."/>
+  <IconUrl DefaultValue="https://coqui123.github.io/m365x-pptx-livemerge-addin/assets/icon-32.png"/>
+  <HighResolutionIconUrl DefaultValue="https://coqui123.github.io/m365x-pptx-livemerge-addin/assets/icon-64.png"/>
+  <SupportUrl DefaultValue="https://coqui123.github.io/m365x-pptx-livemerge-addin/"/>
+  <AppDomains>
+    <AppDomain>https://coqui123.github.io</AppDomain>
+  </AppDomains>
+  <Hosts>
+    <Host Name="Presentation"/>
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://coqui123.github.io/m365x-pptx-livemerge-addin/taskpane.html"/>
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+</OfficeApp>
